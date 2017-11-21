@@ -1,0 +1,10 @@
+<mz-collapsible [onClose]="closeFunctionCallback" [onOpen]="openFunctionCallback" [popout]="true">
+  <mz-collapsible-item *ngFor="let item of data">
+    <mz-collapsible-item-header>
+      {{item.header}}
+    </mz-collapsible-item-header>
+    <mz-collapsible-item-body>
+      {{item.body}}
+    </mz-collapsible-item-body>
+  </mz-collapsible-item>
+</mz-collapsible>
